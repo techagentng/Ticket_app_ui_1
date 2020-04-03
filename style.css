@@ -1,0 +1,64 @@
+/*new stuff*/
+*{
+  box-sizing: border-box;
+}
+.drawer-wrapper{
+  margin: 0 200px;
+  display: inline-block;
+}
+
+/*The left drawer*/ 
+#drawer-left{/*set a container with the total width of both the container and the trigger*/
+  position: relative;
+  height: 100%; width: 205px;
+  overflow: hidden;
+  transition: all .35s ease-in-out;
+}
+#drawer-left:after{/*this will the right border, when the content will be pushed out*/
+  content: '';
+  position: absolute;
+  right: 0; top: 0;  bottom: 0;
+  border-right: 1px solid #000;
+}
+.drawer-left-trigger{
+  /*set the triggers width here, borders etc.*/
+  position: absolute;
+  top: 0; bottom: 0; right: 100%;
+  margin-right: -25px;/*bring it back inside the wrapper*/
+  width: 25px;  
+  background:yellow;
+  /*some styling stuff*/
+  cursor: pointer;
+  text-align: center;
+  font-size: 24px;
+  line-height: 100%;
+}
+.drawer-left-trigger > span{
+  transform: rotate(180deg);
+  transition: all .35s ease-in-out;  
+}
+#drawer-left.closed .drawer-left-trigger > span{
+  transform: rotate(0);
+}
+#drawer-left.closed .drawer-left-trigger{
+  /*this will push the trigger on the right side*/
+  left: auto;
+  right: 25px;
+}
+.drawer-left-content{
+  /*this is the container for the header and content*/
+  position: absolute;
+  top: 0; bottom: 0; right: 0; left: 24px;/*the triggers width(+-1px from the border)*/
+}
+#drawer-left.closed .drawer-left-content{
+  /*this will push the content out*/
+  left: 100%;
+  right: -100%;
+}
+.drawer-left-trigger,
+.drawer-left-content{
+  border-left: 1px solid #000;
+  border-bottom: 1px solid #000;
+  border-top: 1px solid #000;
+  transition: all .35s ease-in-out;
+}
