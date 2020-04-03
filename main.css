@@ -1,3 +1,7 @@
 body{
-    background-color: brown !important;
+    background-color: whitesmoke;
+}
+.left-side-img{
+    height: 300px;
+    width: 300px;
 }
