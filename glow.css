@@ -8,6 +8,7 @@ body{
     height: 100vw;
     justify-content: center;
     display: flex;
+    align-items: center;
 }
 /*.left-side-img{
     height: 300px;
