@@ -8,6 +8,15 @@ body{
     display: flex;
 
 }
+
+.openbtn{
+  display: none;
+}
+@media screen and (max-width: 992px) {
+  .openbtn {
+    display: block;
+  }
+}
 /*.left-side-img{
     height: 300px;
     width: 300px;
