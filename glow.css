@@ -73,6 +73,15 @@ body{
 .signin-button{
     border: none;
     outline: none;
+    cursor: pointer;
+    width: 100%;
+    height: 60px;
+    border-radius: 30px;
+    font-weight: 700;
+    text-align: center;
+    font-family: lato;
+    color: #ffffff;
+    background: #24cfaa;
 }
 
 
