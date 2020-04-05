@@ -3,16 +3,97 @@ body{
     font-family: 'Poppins', sans-serif;
     color:#555;
     font-weight: 700;
+    font-size: 1em;
     overflow: hidden;
-    width: 100vw;
-    height: 100vw;
-    justify-content: center;
     display: flex;
-    align-items: center;
+
 }
 /*.left-side-img{
     height: 300px;
     width: 300px;
 }
 */
+.login-div{
+    width: 97vw;
+    height: 100vh;
+    padding: 60px 35px 35px 35px;
+    margin: 0 auto;
+    border-radius: 40px;
+    background: #ecf0f3;
+    box-shadow: 13px 13px 20px #cbced1,
+                -13px -13px 20px #ffffff;
+}
+.logo{
+    background-image: url('logo.png');
+    margin: 0 auto;
+    /*logo  shadow*/
+    box-shadow: 0px 0px 2px #ecf0f3,
+    /*offset*/
+    0px 0px 0px 5px #ecf0f3,
+    /* bootom right*/
+    8px 8px 15px #a7aaaf,
+    /* top-left*/
+    -8px -8px 15px #ffffff;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+.title{
+    text-align: center;
+    font-size: 26px;
+    padding-top: 24px;
+    letter-spacing: 0.5px;
+}
+.sub-title{
+    text-align: center;
+    font-size: 15px;
+    padding-top: 7px;
+    letter-spacing: 3px;
+}
+.fields{
+    width: 100%;
+    padding: 75px 5px 5px 5px;
+}
+.fields input{
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 18px;
+    color: ;
+    padding: 20px 10px 20px 5px;   
+}
+.username, .password{
+    margin-bottom: 30px;
+    border-radius: 25px;
+    box-shadow: inset 8px 8px 8px #cbced1;
+}
+.signin-button{
+    border: none;
+    outline: none;
+}
 
+
+/* -----
+SVG Icons - svgicons.sparkk.fr
+----- */
+
+.svg-icon {
+    width: 2.5em;
+    height: 2.5em;
+    margin-left:15px ;
+    padding-top: 10px;
+  }
+  
+  .svg-icon path,
+  .svg-icon polygon,
+  .svg-icon rect {
+    fill: #4691f6;
+  }
+  
+  .svg-icon circle {
+    stroke: #4691f6;
+    stroke-width: 1;
+  }
